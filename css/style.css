@@ -1,5 +1,8 @@
-.navbar .container {
-  position: sticky !important;
+* {
+  left: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .carousel-item {
@@ -9,17 +12,17 @@
 .carousel-image-1 {
   background: url(../img/h1_hero.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
-/* #home-heading {
-  position: relative;
-  height: 400px;
-  background: url(../img/lights.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  text-align: center;
-  color: #fff;
-} */
+#home-icon .container .row .col-md-4 .img-fluid {
+  height: 200px;
+  width: 300px;
+}
+
+#features .container .col .text-center {
+  padding: 0 8%;
+}
 
 .dark-overlay {
   position: absolute;
@@ -45,41 +48,8 @@
   width: 300px;
 }
 
-@media(max-width:667px) {
-  #showcase .carousel .carousel-inner .carousel-item .container .carousel-caption .display-3 {
-    font-size: 50px;
-    text-align: center;
-  }
-}
-
-@media(max-width:400px) {
-  #showcase .carousel .carousel-inner .carousel-item .container .carousel-caption .lead {
-    font-size: 90px;
-    /* text-align: center; */
-    /* margin-top: 10px; */
-  }
-}
-
-@media(max-width:400px) {
-  #showcase .carousel .carousel-inner .carousel-item .container .carousel-caption .display-3 {
-    font-size: 40px;
-    /* text-align: center; */
-    margin: auto;
-  }
-}
-
-@media(max-width:400px) {
-  #showcase .carousel .carousel-inner .carousel-item .container .carousel-caption .lead {
-    font-size: 17px;
-    /* text-align: center; */
-    /* margin-top: 60px; */
-  }
-}
-
-
 #status {
   width: 100%;
-  /* max-width: 500px; */
   text-align: center;
   padding: 10px;
   margin: auto;
@@ -114,14 +84,31 @@
   }
 }
 
-
-#home-icon .container .row .col-md-4 .img-fluid {
-  height: 350px;
-  width: 400px;
-}
-
+/* Media qqueries */
 @media(min-width: 657px) {
   body {
     display: block;
+  }
+}
+
+@media(max-width:667px) {
+  #showcase .carousel .carousel-inner .carousel-item .container .carousel-caption .display-3 {
+    font-size: 50px;
+    text-align: center;
+  }
+}
+
+@media(max-width:400px) {
+  #showcase .carousel .carousel-inner .carousel-item .container .carousel-caption .lead {
+    font-size: 17px;
+  }
+
+  #showcase .carousel .carousel-inner .carousel-item .container .carousel-caption .display-3 {
+    font-size: 40px;
+    margin-bottom: 20%;
+  }
+
+  #features .container .col .text-center {
+    padding: 0 0;
   }
 }
