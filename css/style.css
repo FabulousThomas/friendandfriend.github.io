@@ -11,6 +11,23 @@
   box-sizing: border-box;
 }
 
+/* #showcase .img-logo {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+} */
+
+#shocase .img-logo {
+  display: inline;
+}
+
+#showcase .img-logo img {
+  width: 150px;
+  height: 60px;
+}
+
 .carousel-item {
   height: 600px;
 }
@@ -19,6 +36,8 @@
   background: url(../img/h1_hero.jpg);
   background-size: cover;
   background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
 }
 
 #home-icon .container .row .col-md-4 .img-fluid {
@@ -73,6 +92,8 @@
   animation: status 2s ease delay forwards;
 }
 
+/* KEYFRAMES ANIMATIONS */
+
 @keyframes status {
   0% {
     opacity: 1;
@@ -111,10 +132,16 @@
 
   #showcase .carousel .carousel-inner .carousel-item .container .carousel-caption .display-3 {
     font-size: 40px;
-    margin-bottom: 20%;
+    /* margin-bottom: 15%; */
   }
 
   #features .container .col .text-center {
     padding: 0 0;
+  }
+}
+
+@media(max-width:320px) {
+  #showcase .carousel .carousel-inner .carousel-item .container .carousel-caption .display-3 {
+    font-size: 1.7rem;
   }
 }
