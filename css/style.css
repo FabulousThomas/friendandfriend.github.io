@@ -24,8 +24,8 @@
 }
 
 #showcase .img-logo img {
-  width: 150px;
-  height: 60px;
+  width: 300px;
+  height: 150px;
 }
 
 .carousel-item {
@@ -137,6 +137,10 @@
 
   #features .container .col .text-center {
     padding: 0 0;
+  }
+  #showcase .img-logo img {
+    width: 200px;
+    height: 100px;
   }
 }
 
