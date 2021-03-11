@@ -68,7 +68,12 @@
   overflow: hidden;
 }
 
-#cargo .container .row .col-md-3 .img-fluid {
+#cargo .container .row .col-md-4 .img-fluid {
+  height: 200px;
+  width: 300px;
+}
+
+#cannett .container .row .col-md-4 .img-fluid {
   height: 200px;
   width: 300px;
 }
