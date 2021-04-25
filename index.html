@@ -2,32 +2,6 @@
 <html lang="en">
 
 <head>
-  <style type="text/css">
-    /* Set the size of the div element that contains the map */
-    #map {
-      height: 400px;
-      /* The height is 400 pixels */
-      width: 100%;
-      /* The width is the width of the web page */
-    }
-  </style>
-  <script>
-    // Initialize and add the map
-    function initMap() {
-      // The location of Uluru
-      const uluru = { lat: -25.344, lng: 131.036 };
-      // The map, centered at Uluru
-      const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 4,
-        center: uluru,
-      });
-      // The marker, positioned at Uluru
-      const marker = new google.maps.Marker({
-        position: uluru,
-        map: map,
-      });
-    }
-  </script>
   <meta charset="UTF-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
@@ -48,6 +22,7 @@
      #DAE1E7
      #27496D
      #142850
+     #343a40
 -->
 
 <body>
@@ -67,7 +42,7 @@
               </div>
               <li><a href="index.html">Home</a></li>
               <li><a href="#cargo">Shipping & Cargo</a></li>
-              <li><a href="#cannett">Cannett Travels and Tours</a></li>
+              <li><a href="#cannett">Caanett Travels and Tours</a></li>
               <li><a href="#contact">Contact</a></li>
               <li><a href="#about">About Us</a></li>
               <li><a href="https://forms.gle/bEVzFp7n5zgA8HCC9" target="blank" class="btn btn-danger  btn-lg">Place
@@ -79,31 +54,19 @@
     </div>
   </nav>
 
-
-  <!-- <nav id="navbar" class="navbar navbar-expand-sm navbar-dark bg-dark p-3">
-    <div class="container">
-      <a href="index.html" class="navbar-brand" style="font-size: x-large;">Friend&Friend</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarcollapse">
-        <ul class="navbar-nav">
-          <li class="nav-item px-2">
-            <a href="index.html" class="nav-link active">Home</a>
-          </li>
-          <li class="nav-item px-2">
-            <a href="#cargo" class="nav-link">Shipping & Cargo</a>
-          </li>
-          <li class="nav-item px-2">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-          <li class="nav-item px-2">
-            <a href="#about" class="nav-link">About Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
+  <header class="main-header">
+    <a href="index.html"><img src="img/faf_logo.png" alt="ERIC-JUN"></a>
+    <nav class="main-nav">
+      <ul class="main-nav__item">
+        <li class="main-nav__items"><a href="index.html">home</a></li>
+        <li class="main-nav__items"><a href="#cargo">shipping & cargo</a></li>
+        <li class="main-nav__items"><a href="#cannett">caanett travels and tours</a></li>
+        <li class="main-nav__items"><a href="#contact">contact</a></li>
+        <li class="main-nav__items"><a href="#about">about us</a></li>
+        <li class="main-nav__items btn btn-danger py-3"><a href="resellers.html" target="_blank">resellers</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- SHOWCASE SLIDER -->
   <section id="showcase">
@@ -167,24 +130,6 @@
     </div>
   </section>
 
-  <!-- ADS BANNER 1-->
-  <!-- <section class="banner1 my-5 text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h1>Banner 1</h1>
-        </div>
-        <div class="col-md-4">
-          <h1>Banner 2</h1>
-        </div>
-        <div class="col-md-4">
-          <h1>Banner 3</h1>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- ADS BANNER 1 END -->
-
   <!--HOME POST SECTION-->
   <section id="home-icon" class="py-5">
     <div class="container">
@@ -242,24 +187,6 @@
       </div>
     </div>
   </section>
-
-   <!-- ADS BANNER 1-->
-   <!-- <section class="banner1 my-5 text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h1>Banner 1</h1>
-        </div>
-        <div class="col-md-4">
-          <h1>Banner 2</h1>
-        </div>
-        <div class="col-md-4">
-          <h1>Banner 3</h1>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- ADS BANNER 1 END -->
 
   <!--CAANETT TRAVELS AND TOURS LTD SECTION-->
   <section id="cannett" class="my-3 py-3">
@@ -375,14 +302,14 @@
   </section>
 
   <!-- GOOGLE MAP -->
-  <section class="google-map ">
+  <section>
     <div class="container">
       <div id="map"></div>
       <script>
         function initMap() {
           var location = {lat: 6.462660, lng: 3.388040};
           var map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 8,
+            zoom: 16,
             center: location
           });
           var marker = new google.maps.Marker({
@@ -391,7 +318,8 @@
           });
         }
       </script>
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUx9NjO-_oTyW3IDOXPWH0N5vX7TdU0-Y&callback=initMap"></script>
+      <script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?sensor=falsekey=AIzaSyDUx9NjO-_oTyW3IDOXPWH0N5vX7TdU0-Y&callback=initMap"></script>
+      <!-- <script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=initMap"></script> -->
     </div>
   </section>
   

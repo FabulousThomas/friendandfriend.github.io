@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   z-index: 1;
+  display: none;
 }
 
 .menu-wrap .toggler {
@@ -156,4 +157,10 @@
 .menu-wrap .img-logo img {
   width: 200px;
   height: 100px;
+}
+
+@media(max-width:1024px) {
+  .menu-wrap {
+    display: block;
+  }
 }
