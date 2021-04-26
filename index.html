@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta content="">
+  <link rel="icon" href="img/faf_logo.png" type="image/png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -45,8 +46,7 @@
               <li><a href="#cannett">Caanett Travels and Tours</a></li>
               <li><a href="#contact">Contact</a></li>
               <li><a href="#about">About Us</a></li>
-              <li><a href="https://forms.gle/bEVzFp7n5zgA8HCC9" target="blank" class="btn btn-danger  btn-lg">Place
-                  Order</a></li>
+                  <li class="main-nav__items btn btn-lg btn-danger"><a href="resellers.html">Resellers</a></li>
             </ul>
           </div>
         </div>
@@ -309,7 +309,7 @@
         function initMap() {
           var location = {lat: 6.462660, lng: 3.388040};
           var map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 16,
+            zoom: 18,
             center: location
           });
           var marker = new google.maps.Marker({
