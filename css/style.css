@@ -243,11 +243,11 @@
   height: 500px;
 }
 
-.banner1 {
-  animation: wiggle 400ms 0s 1000 none;
+.banner1 h3 {
+  animation: changeTextColor 400ms infinite;
 }
 
-/*Start Hosting wiggle animation*/
+/*Animations Using @keyframes*/
 @keyframes wiggle {
   0% {
       transform: rotateZ(0);
@@ -262,5 +262,18 @@
   }
   200% {
       transform: rotateZ(3deg);
+  }
+}
+
+@keyframes changeTextColor {
+  0% {
+      /* color: yellow; */
+  }
+  50% {
+      /* color: blue; */
+      transform: scaleX(0.9);
+  }
+  100% {
+      /* color: red; */
   }
 }

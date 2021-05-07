@@ -70,19 +70,14 @@
 
   <!--CONTACT-->
   <div id="contact" class="container py-5 mt-5">
-    <h3 class="text-center">GET IN TOUCH</h3>
+    <h3 class="text-center">RESELLERS SPACE<br>(ADS SPACE)</h3>
     <p class="text-center">Please, enter the required infomation(s) in the form bellow</p>
     <div class="container">
       <!-- https://formspree.io/f/mknplndp -->
       <!-- <form action="https://formspree.io/f/xknplnky" method="POST" id="my-form"> -->
-      <form action="https://formspree.io/f/mknplndp" method="POST" id="my-form">
+      <form action="https://formspree.io/f/xknplnky" method="POST" id="my-form">
         <div class="form-group">
           <div class="input-group input-group-lg">
-            <div class="input-group-prepend">
-              <span class="input-group-text bg-danger text-white">
-                <i class="fas fa-user"></i>
-              </span>
-            </div>
             <input type="text" id="name" name="name" class="form-control bg-dark text-white" placeholder="Name"
               required>
           </div>
@@ -90,11 +85,6 @@
 
         <div class="form-group">
           <div class="input-group input-group-lg">
-            <div class="input-group-prepend">
-              <span class="input-group-text bg-danger text-white">
-                <i class="fas fa-envelope"></i>
-              </span>
-            </div>
             <input type="email" id="email" name="email" class="form-control bg-dark text-white" placeholder="Email"
               required>
           </div>
@@ -102,11 +92,6 @@
 
         <div class="form-group">
           <div class="input-group input-group-lg">
-            <div class="input-group-prepend">
-              <span class="input-group-text bg-danger text-white">
-                <i class="fas fa-phone"></i>
-              </span>
-            </div>
             <input type="tel" id="number" name="number" class="form-control bg-dark text-white"
               placeholder="Phone Number" required>
           </div>
@@ -114,12 +99,35 @@
 
         <div class="form-group">
           <div class="input-group input-group-lg">
-            <div class="input-group-prepend">
-              <span class="input-group-text bg-danger text-white">
-                <i class="fas fa-pencil-alt"></i>
-              </span>
-            </div>
-            <textarea class="form-control bg-dark text-white" name="message" placeholder="Message" required></textarea>
+            <input type="tel" id="business-name" name="business-name" class="form-control bg-dark text-white"
+              placeholder="Business / Company Name" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="input-group input-group-lg">
+            <input type="tel" id="business" name="business" class="form-control bg-dark text-white"
+              placeholder="Business Type" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <h5>Upload picture for ads</h5>
+          <div class="input-group input-group-lg">
+            <input type="file" id="file" name="file" class="form-control bg-dark text-white"
+              placeholder="Choose File">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="input-group input-group-lg">
+            <textarea rows="4" class="form-control bg-dark text-white" id="description" name="description" placeholder="Business / Ads Description (Optional)"></textarea>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="input-group input-group-lg">
+            <textarea rows="4" class="form-control bg-dark text-white" name="message" placeholder="Message"></textarea>
           </div>
         </div>
         <button type="submit" class="btn btn-danger btn-block btn-lg mb-3">Submit</button>
