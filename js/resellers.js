@@ -12,13 +12,13 @@ window.addEventListener("DOMContentLoaded", function () {
     form.reset();
     // button.style = "display: none ";
     status.classList.add('success');
-    alert("Your message was sent successfully!");
-    status.innerHTML = "Message sent successfully! \n We will get back to you in the next 72 hours";
+    alert("Your message was sent successfully! \nWe will get back to you in the next 74 hours");
+    status.innerHTML = "Message sent successfully!";
   }
 
   function error() {
     status.classList.add('error');
-    alert("Oops! There was a problem sending your message \n Please try again");
+    alert("Oops! There was a problem sending your message \nPlease try again :(");
     status.innerHTML = "Oops! There was a problem.";
   }
 
