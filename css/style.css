@@ -253,12 +253,24 @@
     width: 200px;
     height: 100px;
   }
+  /* .whats-app img {
+    margin-left: 16.5rem !important;
+    width: 40px;
+    height: 40px;
+    left: 10px;
+} */
 }
 
 @media(max-width:320px) {
   #showcase .carousel .carousel-inner .carousel-item .container .carousel-caption .display-3 {
     font-size: 1.7rem;
   }
+  .whats-app img {
+    margin-left: 16.5rem !important;
+    width: 40px;
+    height: 40px;
+    left: 10px;
+}
 }
 
 #map {
